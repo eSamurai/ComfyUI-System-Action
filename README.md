@@ -4,7 +4,7 @@ A powerful, asynchronous system management node for ComfyUI. Safely shutdown, re
 
 Featuring **Smart Browser Targeting**, it cleanly frees up your RAM and VRAM after long overnight renders without disrupting your other active tasks.
 
-## 🚀 Key Features
+## ✨ Key Features
 
 * **🎯 Smart Browser Targeting (New!):** When choosing `Close Comfy & SM`, the node dynamically detects ComfyUI's active port (even if changed via `--port`) using native network scanning to find & terminate the browser session along with ComfyUI and StabilityMatrix (if present).
 * **🧹 Clean Exit Sequence:** Ensures a perfect cleanup by closing processes in the logical order: Frontend (Browser) ➡️ Launcher (Stability Matrix) ➡️ Backend (ComfyUI python process).
@@ -24,14 +24,16 @@ Restart ComfyUI, and you will find the node in the Utils/System category.
 
 Place the System Action Node at the very end of your workflow (e.g., right after your Save Image or Video Combine node). Connect any output line (Image, Latent, or String) to its pass_through input.
 
-## Input	Description
+<img width="1135" height="340" alt="example" src="https://github.com/user-attachments/assets/7923c9f1-ef5a-43a8-b6fc-b9d499222ce1" />
+
+## 📋 Input	Description
 **action:**  Choose from: None, Shutdown, Restart, Close Comfy & SM, or Custom Command.
 
 **delay_seconds:**	Time to wait before executing the action. (e.g., 120 gives you a 2-minute warning before a shutdown).
 
 **custom_command:**	If Custom Command is selected, type any CMD command to execute (e.g., explorer.exe C:\ComfyUI\output to open your renders folder, or anything you like to execute after the queue).
 
-💡 Pro Tips
+## 💡 Pro Tips
 
 * Use Close Comfy & SM for overnight rendering. It ensures your GPU and RAM are 100% freed up by the time you wake up.
 
