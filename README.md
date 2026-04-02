@@ -4,7 +4,7 @@ A powerful, asynchronous system management node for ComfyUI. Safely shutdown, re
 
 Featuring **Smart Browser Targeting**, it cleanly frees up your RAM and VRAM after long overnight renders without disrupting your other active tasks.
 
-## Key Features
+## 🚀 Key Features
 
 * **🎯 Smart Browser Targeting (New!):** When choosing `Close Comfy & SM`, the node dynamically detects ComfyUI's active port (even if changed via `--port`) using native network scanning to find & terminate the browser session along with ComfyUI and StabilityMatrix (if present).
 * **🧹 Clean Exit Sequence:** Ensures a perfect cleanup by closing processes in the logical order: Frontend (Browser) ➡️ Launcher (Stability Matrix) ➡️ Backend (ComfyUI python process).
